@@ -5,9 +5,8 @@ name: crawler
 # Controls when the workflow will run
 on:
   schedule:
-    - cron:  '0 10 * * *'
-    # This runs at 10:00 AM UTC each day.
-    # * is a special character in YAML so you have to quote this string
+    - cron:  '23 14 * * *'
+    # This runs at 14:23 each day.
   
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
