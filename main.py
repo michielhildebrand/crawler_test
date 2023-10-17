@@ -14,7 +14,8 @@ response = requests.get(api_url, params=params)
 
 if response.status_code == 200:
     total_results = int(response.text.split('<opensearch:totalResults>')[1].split('</opensearch:totalResults>')[0])
-    num_pages = (total_results + per_page - 1) // per_page  # Calculate the number of pages
+    #num_pages = (total_results + per_page - 1) // per_page  # Calculate the number of pages
+    num_pages = 2
     
     # put back the limit
     params["limit"] = per_page
