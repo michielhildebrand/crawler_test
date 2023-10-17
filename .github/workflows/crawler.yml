@@ -5,7 +5,7 @@ name: crawler
 # Controls when the workflow will run
 on:
   schedule:
-    - cron:  '27 12 * * *'
+    - cron:  '45/05 * * * *'
     # github cron uses UTC
     # This runs at 12:27 each day.
   
